@@ -1,0 +1,25 @@
+.slider__button {
+	width: $size-xmedium;
+	height: $size-xmedium;
+	background-color: transparent;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	top: 95%;
+	transform: translateY(-60%);
+	img {
+		width: $size-small;
+		height: $size-small;
+		pointer-events: none;
+	}
+
+	&--prev {
+		left: $space-medium;
+	}
+
+	&--next {
+		right: $space-medium;
+	}
+}

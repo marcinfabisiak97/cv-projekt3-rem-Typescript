@@ -1,0 +1,88 @@
+.namenMenu {
+  padding-left: $space-small;
+  display: flex;
+  flex-direction: column;
+  max-width: 20%;
+
+  &__name {
+    padding-left: $space-small;
+
+    h2 {
+      font-size: $f-xxmiddle;
+      margin: $space-xxxsmall;
+      font-weight: 900;
+      img:first-child {
+        width: 15px;
+        vertical-align: 35%;
+      }
+      img:last-child {
+        width: 15px;
+      }
+    }
+
+    p {
+      font-size: $f-middle;
+    }
+  }
+
+  &__menu {
+    padding-left: $space-small;
+    width: 100%;
+    top: 0;
+    &--scrolled {
+      position: fixed;
+      left: 0;
+      z-index: 1;
+    }
+    &--buttonImgWrapper {
+      vertical-align: 10%;
+      padding-left: $space-xsmall;
+
+      img {
+        width: 25px;
+      }
+    }
+
+    button {
+      padding: $space-null;
+      font-size: $f-middle;
+      background: none;
+      text-decoration: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:focus + ul {
+      pointer-events: all;
+    }
+
+    ul {
+      margin-top: $space-null;
+      padding-left: $space-null;
+      font-size: $f-xsmall;
+
+      cursor: pointer;
+      position: absolute;
+      list-style: none;
+
+      transition: all 0.4s ease;
+
+      li {
+        padding-left: $space-null;
+      }
+
+      li:hover {
+        background-color: $c-blueBell;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 426px) {
+  .namenMenu {
+    width: 100%;
+    &__menu {
+    }
+    max-width: 45%;
+  }
+}

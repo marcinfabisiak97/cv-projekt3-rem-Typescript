@@ -1,0 +1,63 @@
+.containerForm {
+  button {
+    background-color: transparent;
+    width: 15%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2%;
+    font-size: $f-xsmall;
+    color: white;
+    cursor: pointer;
+    border: 2px solid blue;
+    border-radius: 150px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    input {
+      display: block;
+      margin: 1%;
+      min-width: 30%;
+      height: 50px;
+      border-radius: 15px;
+    }
+    &__date {
+      text-align: center;
+    }
+    &__submit {
+      background-color: transparent;
+      text-align: center;
+      border: 2px solid blue;
+      color: white;
+      font-size: $f-xsmall;
+      cursor: pointer;
+    }
+  }
+}
+.react-datepicker-wrapper {
+  width: none;
+}
+@media only screen and (max-width: 426px) {
+  .wrraper {
+    background-image: url("../../../../assets/TLO.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 130vw;
+    min-height: 190vh;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .wrraper {
+    min-width: 140vw;
+    min-height: 190vh;
+  }
+}
+@media only screen and (max-width: 321px) {
+  .wrraper {
+    min-width: 165vw;
+    min-height: 190vh;
+  }
+}
