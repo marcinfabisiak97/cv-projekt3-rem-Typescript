@@ -52,11 +52,12 @@ const ContactUsForm = () => {
           placeholder="e-mail"
         />
         <label>Date picker</label>
-        <DatePicker
-          selected={startDate}
-          onChange={(date) => setStartDate(date)}
-          className="form__date"
-        />
+        <div className="form__date">
+          <DatePicker
+            selected={startDate}
+            onChange={(date) => setStartDate(date)}
+          />
+        </div>
         <label>Gender Selection</label>
         <select {...register("gender", { required: true })}>
           <option value="female">female</option>

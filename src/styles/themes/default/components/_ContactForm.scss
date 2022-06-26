@@ -25,7 +25,10 @@
       border-radius: 15px;
     }
     &__date {
-      text-align: center;
+      width: none;
+      input {
+        text-align: center;
+      }
     }
     &__submit {
       background-color: transparent;
@@ -37,9 +40,7 @@
     }
   }
 }
-.react-datepicker-wrapper {
-  width: none;
-}
+
 @media only screen and (max-width: 426px) {
   .wrraper {
     background-image: url("../../../../assets/TLO.png");
