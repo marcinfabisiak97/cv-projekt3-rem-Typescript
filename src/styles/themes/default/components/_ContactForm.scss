@@ -10,6 +10,12 @@
     cursor: pointer;
     border: 2px solid blue;
     border-radius: 150px;
+    &:hover {
+      box-shadow: inset 0 0 10px #000000;
+    }
+    &:active {
+      box-shadow: 0 0 10px #000000;
+    }
   }
   .form {
     display: flex;
@@ -24,8 +30,16 @@
       height: 50px;
       border-radius: 15px;
     }
+    .icon {
+      color: blue;
+      font-size: 30px;
+      vertical-align: middle;
+    }
     &__date {
       width: none;
+      button {
+        border: none;
+      }
       input {
         text-align: center;
       }
@@ -37,6 +51,12 @@
       color: white;
       font-size: $f-xsmall;
       cursor: pointer;
+      &:hover {
+        box-shadow: inset 0 0 10px #000000;
+      }
+      &:active {
+        box-shadow: 0 0 10px #000000;
+      }
     }
   }
 }

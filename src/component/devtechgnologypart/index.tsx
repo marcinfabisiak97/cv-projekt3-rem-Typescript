@@ -48,7 +48,7 @@ const Devtech = () => {
           <div className="techBricks">
             {myDevTechs.map((el, index) => {
               return (
-                <div>
+                <div key={index}>
                   <div className="techBricks__brick">
                     <img src={el.source} className="techBricks__brick--image" />
                   </div>

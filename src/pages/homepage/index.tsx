@@ -12,9 +12,9 @@ const Homepage = () => {
   const { show, setShow } = useContext(SlideContext);
   return (
     <div className="wrraper">
-      <Menupart />
       {show ? (
         <div>
+          <Menupart />
           <Ideaspart />
           <Phonepart />
           <Controlpart />
