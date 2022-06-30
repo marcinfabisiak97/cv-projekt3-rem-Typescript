@@ -1,0 +1,88 @@
+.phonePart {
+  min-width: 100vw;
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &__phone {
+    background-image: url(../../../../assets/phoneBackground.png);
+    background-repeat: no-repeat;
+    background-position: -10px -10px;
+    min-width: 400px;
+    min-height: 500px;
+  }
+
+  &__description {
+    max-width: 30vw;
+  }
+
+  &__vertiSlider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    border: 3px solid blue;
+    min-width: 5vw;
+    min-height: 15vh;
+    border-radius: 50px 50px 0px 0px;
+    &--btnUp {
+      border-bottom: transparent;
+    }
+    &--btnDown {
+      border-radius: 0px 0px 50px 50px;
+      border-top: transparent;
+    }
+  }
+  &__arrow {
+    width: 0;
+    height: 0;
+
+    &--up {
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid blue;
+    }
+    &--down {
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid blue;
+    }
+    &--down:hover,
+    &--up:hover {
+      border-top-color: purple;
+      border-bottom-color: purple;
+      transform: scale(1.3);
+    }
+  }
+}
+@media only screen and (max-width: 769px) {
+  .phonePart {
+    display: flex;
+    flex-direction: column;
+    &__description {
+      text-align: center;
+      max-width: 80%;
+    }
+    &__vertiSlider {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 426px) {
+  .phonePart {
+    min-width: 123vw;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .phonePart {
+    min-width: 140vw;
+  }
+}
+@media only screen and (max-width: 321px) {
+  .phonePart {
+    min-width: 165vw;
+  }
+}

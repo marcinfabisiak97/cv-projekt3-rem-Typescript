@@ -1,3 +1,9 @@
+## **LIVE DEMO**
+
+[PLAY DEMO](https://cv-react-typescript-onepage-pr3.netlify.app/)
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

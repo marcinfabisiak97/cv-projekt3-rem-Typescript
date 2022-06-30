@@ -1,0 +1,100 @@
+.devTech {
+  margin-top: 30px;
+  background-color: rgb(5, 6, 37);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  button {
+    border-radius: 15px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    min-width: 150px;
+    min-height: 50px;
+    margin-bottom: $space-xsmall;
+    cursor: pointer;
+  }
+  &__title {
+    font-size: 50px;
+    font-size: $f-xxmiddle;
+    text-align: center;
+    padding-bottom: $space-null;
+    background: linear-gradient(
+      to top,
+      #4b4b6e 15%,
+      #ffffff 50%,
+      #ffffff 75%,
+      #ffffff 75%
+    );
+    background-clip: text;
+    color: transparent;
+    font-weight: 1000;
+  }
+  &__description {
+    max-width: 40vw;
+  }
+}
+.techBricks {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+  &__brick {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    min-height: 50%;
+    min-width: 70%;
+    border-radius: 10px;
+    &--image {
+      width: 60px;
+      height: 60px;
+      transition: transform 0.7s ease-in-out;
+    }
+
+    &--image:hover {
+      transform: rotate(360deg);
+    }
+  }
+  &__title {
+    margin-top: 0px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .devTech {
+    min-width: 105vw;
+    &__description {
+      max-width: 50vw;
+    }
+  }
+  .techBricks {
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .devTech {
+    min-width: 125vw;
+    &__description {
+      max-width: 90vw;
+    }
+  }
+}
+@media only screen and (max-width: 376px) {
+  .devTech {
+    min-width: 145vw;
+    &__description {
+      max-width: 100vw;
+    }
+  }
+}
+@media only screen and (max-width: 321px) {
+  .devTech {
+    min-width: 165vw;
+  }
+}
