@@ -20,6 +20,7 @@
     border: 3px solid $c-seashell;
     margin: 0 5px;
     background: $c-seashell;
+    cursor: pointer;
     &--active {
       background: $c-mineShaft;
     }

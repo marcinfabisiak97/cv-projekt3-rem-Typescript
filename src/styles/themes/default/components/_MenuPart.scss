@@ -61,19 +61,17 @@
       margin-top: $space-null;
       padding-left: $space-null;
       font-size: $f-xsmall;
-
       cursor: pointer;
       position: absolute;
       list-style: none;
 
-      transition: all 0.4s ease;
-
       li {
         padding-left: $space-null;
+        transition: font-size 0.4s ease-in-out;
       }
 
       li:hover {
-        background-color: $c-blueBell;
+        font-size: $f-xxsmall;
       }
     }
   }
