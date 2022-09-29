@@ -15,8 +15,6 @@ const Menupart: FC = () => {
     myContacty,
     menu,
     setOpenMenu,
-    scrolled,
-    setScrolled,
   } = useContext(SlideContext);
   const navMenu = [
     { name: "My Portfolio", linker: myPortfolio },
@@ -25,17 +23,6 @@ const Menupart: FC = () => {
     { name: "Technology", linker: myProjecty },
     { name: "Contact me", linker: myContacty },
   ];
-  const handleScroll = () => {
-    const offset = window.scrollY;
-    if (offset > 350) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-  });
 
   return (
     <React.Fragment>
@@ -46,13 +33,7 @@ const Menupart: FC = () => {
             <p>Marcin Fabisiak Portfolio</p>
             <p>Front End Developer</p>
           </div>
-          <div
-            className={
-              scrolled
-                ? "namenMenu__menu--scrolled namenMenu__menu"
-                : "namenMenu__menu"
-            }
-          >
+          <div className={"namenMenu__menu"}>
             <button onClick={() => setOpenMenu(!menu)}>
               Menu
               <span className="namenMenu__menu--buttonImgWrapper">
