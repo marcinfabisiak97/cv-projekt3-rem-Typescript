@@ -21,6 +21,7 @@
 }
 @media only screen and (max-width: 426px) {
   .imagePart {
+    min-height: 50vh;
     &__imgRight {
       img {
         max-width: 80%;

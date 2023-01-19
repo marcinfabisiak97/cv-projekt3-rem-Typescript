@@ -68,7 +68,7 @@
     background-image: url("../../../../assets/TLO.png");
     background-repeat: no-repeat;
     background-size: cover;
-    min-width: 130vw;
+    //min-width: 130vw;
   }
   .containerForm {
     button {
@@ -78,13 +78,13 @@
 }
 @media only screen and (max-width: 376px) {
   .wrraper {
-    min-width: 140vw;
+    //min-width: 140vw;
     //min-height: 190vh;
   }
 }
 @media only screen and (max-width: 321px) {
   .wrraper {
-    min-width: 165vw;
+    //min-width: 165vw;
     //min-height: 190vh;
   }
 }

@@ -6,6 +6,7 @@
   align-items: center;
   &__phone {
     background-image: url(../../../../assets/phoneBackground.png);
+
     background-repeat: no-repeat;
     background-position: -10px -10px;
     min-width: 400px;
@@ -72,11 +73,11 @@
     }
   }
 }
-// @media only screen and (max-width: 426px) {
-//   .phonePart {
-//     min-width: 123vw;
-//   }
-// }
+@media only screen and (max-width: 426px) {
+  .phonePart {
+    display: none;
+  }
+}
 // @media only screen and (max-width: 376px) {
 //   .phonePart {
 //     min-width: 140vw;

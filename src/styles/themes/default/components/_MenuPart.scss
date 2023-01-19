@@ -78,9 +78,61 @@
 }
 @media only screen and (max-width: 426px) {
   .namenMenu {
-    width: 100%;
-    &__menu {
-    }
     max-width: 45%;
+    min-width: 35%;
+    &__name {
+      h2 {
+        font-size: 35px;
+      }
+      p {
+        font-size: $f-small;
+      }
+      img {
+        max-width: 10px;
+      }
+    }
+    &__menu {
+      padding-left: $space-small;
+      width: 100%;
+      top: 0;
+      button {
+        padding: $space-null;
+        font-size: $f-little;
+        background: none;
+        text-decoration: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+      &--buttonImgWrapper {
+        vertical-align: 10%;
+        padding-left: $space-xsmall;
+
+        img {
+          width: 15px;
+        }
+      }
+      ul {
+        margin-top: $space-null;
+        padding-left: $space-null;
+        font-size: $f-little;
+        cursor: pointer;
+        position: absolute;
+        list-style: none;
+
+        li {
+          height: 8px;
+          padding-left: $space-null;
+          transition: font-size 0.4s ease-in-out;
+        }
+        li:nth-of-type(2) {
+          display: none;
+        }
+
+        li:hover {
+          font-size: 14px;
+        }
+      }
+    }
   }
 }

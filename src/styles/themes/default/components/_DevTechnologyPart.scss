@@ -66,6 +66,14 @@
 }
 @media only screen and (max-width: 769px) {
   .devTech {
+    padding: 10px;
+    h2 {
+      font-size: $f-middle;
+    }
+    p {
+      font-size: $f-small;
+      text-align: justify;
+    }
     &__description {
       max-width: 50vw;
     }
@@ -74,6 +82,14 @@
     margin-left: 5%;
     margin-right: 5%;
     flex-wrap: wrap;
+    p {
+      text-align: center;
+    }
+    &__brick {
+      margin: 5px;
+      min-height: 70%;
+      min-width: 100%;
+    }
   }
 }
 @media only screen and (max-width: 426px) {

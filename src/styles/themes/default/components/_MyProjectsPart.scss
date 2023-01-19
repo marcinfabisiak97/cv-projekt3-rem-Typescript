@@ -71,11 +71,29 @@
     }
   }
 }
-// @media only screen and (max-width: 426px) {
-//   .projects {
-//     min-width: 123vw;
-//   }
-// }
+@media only screen and (max-width: 426px) {
+  .projects {
+    &__title {
+      font-size: $f-middle;
+      font-weight: 900;
+      margin: 5% auto;
+    }
+    &__btndescription {
+      padding: 2%;
+      width: 100px;
+      text-align: center;
+    }
+    &__descr {
+      text-align: center;
+      h3 {
+        font-size: $f-xxsmall;
+      }
+      p {
+        font-size: $f-small;
+      }
+    }
+  }
+}
 // @media only screen and (max-width: 376px) {
 //   .projects {
 //     min-width: 140vw;
