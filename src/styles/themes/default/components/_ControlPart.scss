@@ -2,7 +2,6 @@
   min-width: 100vw;
 
   &__text {
-    width: 100vw;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -57,9 +56,9 @@
 }
 @media only screen and (max-width: 426px) {
   .controlAndTechnolgies {
-    min-width: 123vw;
+    // min-width: 123vw;
     &__text {
-      min-width: 123vw;
+      // min-width: 123vw;
     }
     &__technolgies {
       font-size: 90%;
@@ -71,19 +70,19 @@
     }
   }
 }
-@media only screen and (max-width: 376px) {
-  .controlAndTechnolgies {
-    min-width: 140vw;
-    &__text {
-      min-width: 140vw;
-    }
-  }
-}
-@media only screen and (max-width: 321px) {
-  .controlAndTechnolgies {
-    min-width: 165vw;
-    &__text {
-      min-width: 165vw;
-    }
-  }
-}
+// @media only screen and (max-width: 376px) {
+//   .controlAndTechnolgies {
+//     min-width: 140vw;
+//     &__text {
+//       min-width: 140vw;
+//     }
+//   }
+// }
+// @media only screen and (max-width: 321px) {
+//   .controlAndTechnolgies {
+//     min-width: 165vw;
+//     &__text {
+//       min-width: 165vw;
+//     }
+//   }
+// }
