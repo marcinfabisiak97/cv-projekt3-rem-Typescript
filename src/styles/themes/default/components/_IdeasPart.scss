@@ -2,7 +2,6 @@
   display: flex-wrap;
   justify-content: center;
   padding: 3%;
-  min-width: 100vw;
 
   &__upperText {
     margin: 0 auto;
@@ -82,16 +81,13 @@
 }
 @media only screen and (max-width: 426px) {
   .ideasPart {
-    min-width: 123vw;
   }
 }
 @media only screen and (max-width: 376px) {
   .ideasPart {
-    min-width: 140vw;
   }
 }
 @media only screen and (max-width: 321px) {
   .ideasPart {
-    min-width: 165vw;
   }
 }

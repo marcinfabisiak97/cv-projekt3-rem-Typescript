@@ -1,16 +1,8 @@
-import React, { FC, RefObject, useContext } from "react";
+import React, { FC, useContext } from "react";
 import { SlideContext } from "../../context/Contexts";
-import { TypeProps } from "../../types";
-const Ideaspart: FC = () => {
-  const {
-    myPortfolio,
-    myService,
-    myAwards,
-    myProjecty,
-    myContacty,
-    setSlideproject,
-  } = useContext(SlideContext);
 
+const Ideaspart: FC = () => {
+  const { myService, setSlideproject } = useContext(SlideContext);
   const myServices = [{ name: "Websites" }, { name: "Applications" }];
   return (
     <React.Fragment>

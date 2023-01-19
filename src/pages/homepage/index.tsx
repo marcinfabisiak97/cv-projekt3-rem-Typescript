@@ -11,9 +11,9 @@ import ContactUsForm from "../../component/contactform";
 const Homepage = () => {
   const { show, setShow } = useContext(SlideContext);
   return (
-    <div className="wrraper">
+    <div>
       {show ? (
-        <div>
+        <div className="wrraper">
           <Menupart />
           <Ideaspart />
           <Phonepart />
