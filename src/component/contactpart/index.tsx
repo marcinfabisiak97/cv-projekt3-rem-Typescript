@@ -117,20 +117,20 @@ const Contact: FC = () => {
         </div>
 
         <div className="footer__links">
-          <NavLink target="blank" to="/Facebook">
+          <a target="blank" href="https://pl.linkedin.com/">
             <img
               className="footer__links--bigger"
               src={facebook}
               alt="facebook"
             />
-          </NavLink>
-          <NavLink target="blank" to="/Linkedin">
+          </a>
+          <a target="blank" href="https://pl-pl.facebook.com/">
             <img
               className="footer__links--bigger"
               src={linkedin}
               alt="linkedin"
             />
-          </NavLink>
+          </a>
         </div>
       </div>
     </div>
