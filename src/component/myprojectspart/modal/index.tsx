@@ -8,7 +8,9 @@ const Modal = ({
   return (
     <div className="modalBackground">
       <div className="modalContainer">
-        <img src={pr1} alt="project 1" />
+        <a href="https://project1onepagecv.netlify.app" target="_blank">
+          <img src={pr1} alt="project 1" />
+        </a>
         <div className="modalContainer__CloseBtn">
           <button
             onClick={() => {

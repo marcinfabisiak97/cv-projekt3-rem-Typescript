@@ -8,7 +8,9 @@ const Modal1 = ({
   return (
     <div className="modalBackground">
       <div className="modalContainer">
-        <img src={pr2} />
+        <a href="https://projekt2reactquiz.netlify.app" target="_blank">
+          <img src={pr2} />
+        </a>
         <div className="modalContainer__CloseBtn">
           <button
             onClick={() => {
