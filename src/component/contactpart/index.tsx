@@ -15,10 +15,10 @@ const leftQuote = require("../../assets/leftQuote.png");
 const rightQuote = require("../../assets/rightQuote.png");
 const facebook = require("../../assets/facebook_icon.png");
 const linkedin = require("../../assets/linkedin_icon.png");
-const delay = 4000;
+const delay = 8000;
 const opinion = [
   "Creating such a unique and effective solution for our company, which allowed to reduce production cost thanks to new software and in such a short time is a real challenge and success.",
-  "Martin did an awesome job, exceeding my expectations on both the quality and quantity of his work. Great communication skills and ability to stick to a tight deadline. I will surely hire him again in the future for more projects.",
+  "He did an awesome job, exceeding my expectations on both the quality and quantity of his work. Great communication skills and ability to stick to a tight deadline. I will surely hire him again in the future for more projects.",
   "It was great to work with Martin. I will work with him again for sure in the near future. He communicates well and makes himself available to answer questions and helps above and beyond what is expected of him.",
 ];
 const Contact: FC = () => {
@@ -61,7 +61,7 @@ const Contact: FC = () => {
       <div className="slideShow">
         <div
           className="slideShow__Slider"
-          style={{ transform: `translate3d(${-index * 34}%, 0, 0)` }}
+          style={{ transform: `translate3d(${-index * 33.33}%, 0, 0)` }}
         >
           {opinion.map((el, index) => (
             <div className="slideShow__slide" key={index}>
